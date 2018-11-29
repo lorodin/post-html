@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="js/jquery.js"></script>
+    <script src='js/ui.actions.js'></script>
+    <script src='js/mobile.js'></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row header">
+            <div class="logo">
+                <a href="#">
+                    <img src='imgs/logo.jpg'/>
+                </a>
+            </div>
+            <div class="top-btns">
+                <ul>
+                    <li>
+                        <a href='#' id='open-search-btn' class='search-btn'></a>
+                    </li>
+                    <li>
+                        <a href="#" class='card-btn'></a>
+                    </li>
+                </ul>
+
+                <div id='search-form'>
+                    <form>
+                        <input  type='text'/>
+                        <button id='search-submit-btn' title='поиск'></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row top-menu">
+            <!--NAVBAR-->
+            <div class='toggle-btn' id='menu-toggle-btn' data-toggle='0'>
+
+            </div>
+            <nav id='top-menu'>
+                <ul>
+                    <li>
+                        <a href="#" data-toggle='0' class='dropdown-link'>
+                            Продукты
+                        </a>
+                        <ul>
+                            <li><a href='#'>Алкоголь</a></li>
+                            <li><a href='#'>Конфеты</a></li>
+                            <li><a href='#'>Шоколад</a></li>
+                            <li><a href='#'>Морепродукты</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Рекомендации</a>
+                    </li>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--NAVBAR-->
+        </div>
+    </div>
+    <div class="container bg-lg" id='top-slider'>
+        <div class="row">
+            <div class="slider">
+                <div class="arrow arrow-left"></div>
+                <div class="slider-content">
+                    <div class="slide bg-1">
+                    </div>
+                    <div class="slide bg-2">
+                    </div>
+                    <div class="slide bg-3">
+                    </div>
+                </div>
+                <div class="arrow arrow-right"></div>
+                <div class="slider-paginator">
+                    <ul class="points">
+                        <li class="point"><a href="#"></a></li>
+                        <li class="point"><a href="#"></a></li>
+                        <li class="point"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-sea" id='sea-slider'>
+        <div class="row">
+
+        </div>
+    </div>
+    <div class="container bg-forest" id='forest-slider'>
+        <div class="row">
+
+        </div>
+    </div>
+    <div class="container bg-shuga" id='shuga-slider'>
+        <div class="row">
+
+        </div>
+    </div>
+    <div class="container bg-posts" id='posts-slider'>
+        <div class="row">
+
+        </div>
+    </div>
+    <div class="container bg-footer" id='footer'>
+        <div class="row">
+
+        </div>
+    </div>
+</body>
+</html>     

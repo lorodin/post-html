@@ -1,0 +1,338 @@
+body,html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.content {
+    min-height: 1200px;
+}
+
+.header {
+    min-height: 120px;
+}
+
+.top-btns ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-btns ul li {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.top-btns ul li a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    border: 0px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+}
+
+.top-btns{
+    float: right;
+    padding-right: 20px;
+    position: relative;
+    text-align: right;
+    width: 100px;
+}
+
+.logo{
+    position: relative;
+}
+
+.search-btn {
+    background: url('../imgs/nav-icon.png') no-repeat ;
+    background-position-y: -93px;
+    transition: background-position linear 200ms;
+}
+
+.search-btn:hover {
+    background-position-y: -142px;
+}
+
+.card-btn{
+    background: url('../imgs/nav-icon.png') no-repeat;
+    background-position-y: -281px;
+    transition: background-position linear 200ms;
+    top: 0px;
+    z-index: 8;
+}
+
+.card-btn:hover{
+    background-position-y: -345px;
+}
+
+#search-form {
+    background: #999;
+    padding: 10px;
+    border-radius: 10px;
+    height: 35px;
+    display: none;
+    padding-bottom: 0px;
+}
+
+.top-slider {
+    min-height: 200px;
+    background: #EEE;
+}
+
+.row .row {
+    width: 100%;
+}
+
+.footer{
+    height: 200px;
+    background: #EEE;
+    color: #333;
+}
+
+#search-form input[type='text']{
+    color: #fff;
+    background: #999;
+    outline: none;
+    border: 0px;
+    float: left;
+    font-size: 18px;
+    margin: 0px;
+}
+
+#search-form button {
+    background: #999;
+    border: none;
+    border-left: 1px solid #fff;
+    height: 28px;
+    outline: none;
+    margin: 0px;
+    background: url('../imgs/nav-icon.png') no-repeat;
+    background-position-y: -396px;
+    background-position-x: center;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-position-y: -142px;
+}
+.top-menu {
+    background: rgba(255, 255, 255, 0.5);
+}
+.top-menu a{
+    text-decoration: none;
+}
+
+.bg-lg {
+    min-height: 300px;
+}
+
+.bg-sea {
+    min-height: 400px;
+    background: #d1eaf0;
+}
+
+.bg-forest {
+    background: #cdf2a1;
+    min-height: 400px;
+}
+
+.bg-posts {
+    background: #EEE;
+    min-height: 400px;
+}
+
+.bg-footer {
+    background: #666;
+    min-height: 120px;
+}
+
+@media (min-width: 800px){
+    .container {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .container .row{
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .toggle-btn {
+        display: none;
+    }
+
+    #search-form{
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        float: right;
+        top: 0px;
+        width: 300px;
+    }
+
+    #search-form input[type='text']{
+        width: 87%;
+    }
+
+    #search-form button {
+        width: 12%;
+    }
+
+    nav ul li ul {
+        width: 170px;
+        height: 0px;
+        overflow: hidden;
+        position: absolute;
+        border-radius: 5px;
+        background: rgba(30, 30, 30, 0.5);
+        text-align: left;
+        z-index: 1000;
+    }
+
+    nav ul li ul a{
+        color: #fff;
+        transition: color linear 100ms;
+    }
+    nav ul li ul a:hover{
+        background: none;
+        color: #bbb;
+    }
+    
+    nav li:hover ul{
+        height: auto;
+        padding: 20px 0px; 
+        margin: 0px;
+    }
+    
+    .header{
+        padding-top: 50px;
+    }
+    
+    .logo{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        margin: 0px auto;
+    }
+    
+    .top-btns{
+        margin-top: -80px;
+    }
+
+    nav{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    nav ul li a {
+        color: #000;
+        display: block;
+        border-radius: 20px;
+        padding: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: background linear 200ms;
+        transition: color linear 200ms;
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
+        background: #6cba00;
+        color: #fff;
+    }
+
+    .toggle-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .toggle-btn {
+        display: block;
+    }
+    #search-form{
+        width: 90%;
+        float: right;
+        top: 0px;
+        margin: 0px;
+    }
+    #search-form input[type='text']{
+        width: 87%;
+    }
+    #search-form button {
+        width: 10%;
+    }
+    .toggle-btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background: url('../imgs/toggle-menu.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .header{
+        padding-top: 10px;
+    }
+    .top-btns {
+        position: relative;
+        width: 100%;
+        margin-top: -180px;
+    }
+    .top-btns ul{
+        float: right;
+    }
+    .logo {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+    }
+    
+    nav {
+        display: none;
+        width: 100%;
+    }
+    
+    nav ul {
+        padding: 0px;
+        margin: 0px;
+        background: #999;
+    }
+    
+    nav ul a {
+        color: #fff;
+        transition: color linear 200ms;
+    }
+    nav ul a:hover {
+        color: #EEE;
+        text-decoration: none;
+    }
+    nav ul li {
+        padding: 10px;
+    }
+    nav ul li ul {
+        padding: 10px;
+        display: none;
+        background: #bbb;
+    }
+    nav ul li ul li {
+        padding: 10px;
+        margin: 0px;
+        display: block;
+        width: 100%;
+    }
+    nav ul li {
+        display: block;
+        widows: 100%;
+    }
+}
