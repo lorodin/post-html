@@ -7,7 +7,7 @@
 }
 
 .slider .slider-content {
-    width: 3100px;
+    float: left;
 }
 
 .slider .slide {
@@ -44,17 +44,12 @@
 }
 .slider .arrow-left {
     float: left;
+    background: rgba(140, 140, 140, 0.3) url('../imgs/arrow-left.png') no-repeat center;
+    background-size: 30px 30px;
 }
-
-.slider .arrow-right{
-    margin-left: 974px;
-}
-
-.slider-paginator {
-    position: absolute;
-    width: 1024px;
-    height: 30px;
-    margin-top: 270px;
+.slider .arrow-right {
+    background: rgba(140, 140, 140, 0.3) url('../imgs/arrow-right.png') no-repeat center;
+    background-size: 30px 30px;
 }
 
 .slider .points {
@@ -67,8 +62,9 @@
 
 .slider .points .point {
     display: inline-block;
-    
+    margin-right: 5px;
 }
+
 .slider .points .point a{
     display: block;
     float: left;
@@ -80,6 +76,33 @@
     opacity: 1;
     transition: opacity linear 200ms;
 }
+
 .slider .points .point a:hover {
     opacity: 0.6;
+}
+
+.slider-paginator {
+    position: absolute;
+    height: 30px;
+    margin-top: 270px;
+}
+
+@media (min-width: 800px){
+    .slider .arrow-right{
+        margin-left: 974px;
+    }
+    .slider-paginator {
+        width: 1024px;
+    }
+}
+
+@media (max-width: 800px){
+    .slider .arrow-right{
+        /* margin-left: 370px;   */
+        float: right;
+        right: 0px;
+    }
+    .slider-paginator{
+        width: 100%;
+    }
 }

@@ -1,6 +1,7 @@
 $(function(){
     InitMobile(Number($(window).width()));
     InitUIEvents();
+    let slider = new Slider($("#top-slider"));
     $("#open-search-btn").click(()=>{
         let show_search = $("#open-search-btn").data('toggle');
         if(!show_search || show_search == '0'){
