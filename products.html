@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/hidden-fast-view.css">
+    <script src="js/jquery.js"></script>
+    <script src='js/ui.actions.js'></script>
+    <script src='js/mobile.js'></script>
+    <script src="js/slider.js"></script>
+    <script src='js/catogorys.list.js'></script>
+    <script src="js/change.view.style.js"></script>
+    <script src="js/fast.product.view.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id='hidden-fast-view'>
+        <div id='product-info-wrapper'>
+            <div class="top">
+                <a id='close-hidden-fast-view'><i class="fas fa-times"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row header">
+            <div class="logo">
+                <a href="#">
+                    <img src='imgs/logo.jpg'/>
+                </a>
+            </div>
+            <div class="top-btns">
+                <ul>
+                    <li>
+                        <a href='#' id='open-search-btn' class='search-btn'></a>
+                    </li>
+                    <li>
+                        <a href="#" class='card-btn'><b>12</b></a>
+                    </li>
+                </ul>
+
+                <div id='search-form'>
+                    <form>
+                        <input  type='text'/>
+                        <button id='search-submit-btn' title='поиск'></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row" id='top-menu'>
+            <!--NAVBAR-->
+            <div class='toggle-btn menu-toggle-btn' data-toggle='0'>
+
+            </div>
+            <nav id='top-menu'>
+                <ul>
+                    <li>
+                        <a href="#" data-toggle='0' class='dropdown-link'>
+                            Продукты
+                        </a>
+                        <ul>
+                            <li><a href='products.html'>Алкоголь</a></li>
+                            <li><a href='products.html'>Конфеты</a></li>
+                            <li><a href='products.html'>Шоколад</a></li>
+                            <li><a href='products.html'>Морепродукты</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Рекомендации</a>
+                    </li>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--NAVBAR-->
+        </div>
+        
+    </div>
+    <div class="row" id="top-static-menu">
+        <!--NAVBAR-->
+        <div class='toggle-btn menu-toggle-btn' data-toggle='0'></div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a data-toggle='0' class='dropdown-link'>
+                        Продукты
+                    </a>
+                    <ul>
+                        <li><a href='products.html'>Алкоголь</a></li>
+                        <li><a href='products.html'>Конфеты</a></li>
+                        <li><a href='products.html'>Шоколад</a></li>
+                        <li><a href='products.html'>Морепродукты</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Рекомендации</a>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <!--NAVBAR-->
+    </div>
+
+    <div class="container bg-lg">
+        <div class="row">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href='index.html' title='на главную'><i class='fa fa-home'></i></a></li>
+                    <li>|</li>
+                    <li><a href='#'>Продукты</a></li>
+                    <li>|</li>
+                    <li><a href='#' class='active'>Приморский кондитер</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <!--DESKTOP CATEGORYS-->
+            <div class="col-lg-3 hidden-sm col-categorys">
+                <div class="box-header">
+                    <h3>
+                        Категории
+                    </h3>
+                </div>
+                <div class="box-list">
+                    <ul class='root-list'>
+                        <li>
+                            <a href="#" class='dropdown-content'>Уссурийский бальзам<i class='dropdown-list-btn'></i></a>
+                            <ul>
+                                <li>
+                                    <a href="#">Крепкий алкоголь</a>
+                                </li>
+                                <li>
+                                    <a href="#">Слабый алкоголь</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li >
+                            <a href="#" class='dropdown-content'>Морепродукты<i class='dropdown-list-btn'></i></a>
+                            <ul>
+                                <li>
+                                    <a href="#">Кальмар</a>
+                                </li>
+                                <li>
+                                    <a href="#">Морская капуста</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class='dropdown-content'>Приморский кондитер<i class='dropdown-list-btn'></i></a>
+                            <ul>
+                                <li><a href="#">Конфеты</a></li>
+                                <li><a href="#">Шоколад</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Посылки</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--DESKTOP CATEGORYS-->
+
+            <div class='col-lg-9 col-sm-12 products-content'>
+                <!--ORDERS AND VIEW BTNS-->
+                <div class="page-title">
+                    <h2>Приморский кондитер</h2>
+                </div>
+                <div class="filter-and-view-options">
+                    <div class="view-btns hidden-sm">
+                        <ul>
+                            <li>
+                                <div class="btn btn-grid btn-active"></div>
+                            </li>
+                            <li>
+                                <div class="btn btn-list"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-page-btns">
+                        <span>Сортировка по: </span>
+                        <select>
+                            <option>Цена (возвростание)</option>
+                            <option>Цена (убывание)</option>
+                        </select>
+                        <span class='invisible'>#####</span>
+                        <span>Показывать: </span>
+                        <select name="per-on-page" id="per-on-page">
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="30">30</option>
+                        </select>
+                    </div>
+                </div>
+                <!--ORDERS AND VIEW BTNS-->
+
+            <div class="line"></div>
+
+            <!--PRODUCST LIST-->
+            <div class='product-item col-lg-3 col-sm-12'>
+                <div class="product-content">
+                    <div class='product-image' style="background-image: url('imgs/test-products/1.png')">
+                        <div class="hidden-block">
+                            <ul>
+                                <li>
+                                    <a data-product-id='1' class='quick-view-btn' title='быстрый просмотр'></a>
+                                </li>
+                                <li>
+                                    <a class='add-to-basket-btn' title='добавить в корзину'></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-title">
+                        <a href="#" title='Кальмар'>
+                            <h4>Кальмар sad asd asd asd asdasd asdasdasd</h4>
+                        </a>
+                    </div>
+                    <div class="product-shor-description">
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала 
+                            XVI века. В то время некий безымянный печатник создал большую коллекцию 
+                            размеров и форм шрифтов, используя Lore
+                    </div>
+                    <div class="product-price">
+                        100<i class="fas fa-ruble-sign"></i>
+                    </div>
+                    <div class="btn-add-to-card">
+                        <div class="btn">В корзину</div>
+                    </div>
+                    <div class="btn-more-information">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class='product-item col-lg-3 col-sm-12'>
+                <div class="product-content">
+                    <div class='product-image' style="background-image: url('imgs/test-products/1.png')">
+                        <div class="hidden-block"><ul>
+                                <li>
+                                    <a data-product-id='1' class='quick-view-btn' title='быстрый просмотр'></a>
+                                </li>
+                                <li>
+                                    <a class='add-to-basket-btn' title='добавить в корзину'></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-title">
+                        <a href="#" title='Кальмар'>
+                            <h4>Кальмар</h4>
+                        </a>
+                    </div>
+                    <div class="product-price">
+                        100<i class="fas fa-ruble-sign"></i>
+                    </div>
+
+                    <div class="btn-add-to-card">
+                        <div class="btn">В корзину</div>
+                    </div>
+                </div>
+            </div>
+            <div class='product-item col-lg-3 col-sm-12'>
+                <div class="product-content">
+                    <div class='product-image' style="background-image: url('imgs/test-products/1.png')">
+                        <div class="hidden-block"><ul>
+                                <li>
+                                    <a data-product-id='1' class='quick-view-btn' title='быстрый просмотр'></a>
+                                </li>
+                                <li>
+                                    <a class='add-to-basket-btn' title='добавить в корзину'></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-title">
+                        <a href="#" title='Кальмар'>
+                            <h4>Кальмар</h4>
+                        </a>
+                    </div>
+                    <div class="product-price">
+                        100<i class="fas fa-ruble-sign"></i>
+                    </div>
+
+                    <div class="btn-add-to-card">
+                        <div class="btn">В корзину</div>
+                    </div>
+                </div>
+            </div>
+            <div class='product-item col-lg-3 col-sm-12'>
+                <div class="product-content">
+                    <div class='product-image' style="background-image: url('imgs/test-products/1.png')">
+                        <div class="hidden-block"><ul>
+                                <li>
+                                    <a data-product-id='1' class='quick-view-btn' title='быстрый просмотр'></a>
+                                </li>
+                                <li>
+                                    <a class='add-to-basket-btn' title='добавить в корзину'></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-title">
+                        <a href="#" title='Кальмар'>
+                            <h4>Кальмар</h4>
+                        </a>
+                    </div>
+                    <div class="product-price">
+                        100<i class="fas fa-ruble-sign"></i>
+                    </div>
+
+                    <div class="btn-add-to-card">
+                        <div class="btn">В корзину</div>
+                    </div>
+                </div>
+            </div>
+            <div class='product-item col-lg-3 col-sm-12'>
+                <div class="product-content">
+                    <div class='product-image' style="background-image: url('imgs/test-products/1.png')">
+                        <div class="hidden-block"><ul>
+                                <li>
+                                    <a data-product-id='1' class='quick-view-btn' title='быстрый просмотр'></a>
+                                </li>
+                                <li>
+                                    <a class='add-to-basket-btn' title='добавить в корзину'></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-title">
+                        <a href="#" title='Кальмар'>
+                            <h4>Кальмар</h4>
+                        </a>
+                    </div>
+                    <div class="product-price">
+                        100<i class="fas fa-ruble-sign"></i>
+                    </div>
+
+                    <div class="btn-add-to-card">
+                        <div class="btn">В корзину</div>
+                    </div>
+                </div>
+            </div>
+            
+                <!--PRODUCTS LIST-->
+
+            </div>
+            
+    </div>
+
+        <!--MOBILE CATEGORYS-->
+    <div class="row hidden-lg">
+        <div class="col-sm-12 mobile-categorys">
+            <div class="box-header">
+                <h3>
+                    Категории
+                    <i class='fa fa-angle-down'></i>
+                </h3>
+            </div>
+            <div class="box-list">
+                <ul class='root-list'>
+                    <li>
+                        <a href="#" class='dropdown-content'>Уссурийский бальзам<i class='dropdown-list-btn'></i></a>
+                        <ul>
+                            <li>
+                                <a href="#">Крепкий алкоголь</a>
+                            </li>
+                            <li>
+                                <a href="#">Слабый алкоголь</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="#" class='dropdown-content'>Морепродукты<i class='dropdown-list-btn'></i></a>
+                        <ul>
+                            <li>
+                                <a href="#">Кальмар</a>
+                            </li>
+                            <li>
+                                <a href="#">Морская капуста</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class='dropdown-content'>Приморский кондитер<i class='dropdown-list-btn'></i></a>
+                        <ul>
+                            <li><a href="#">Конфеты</a></li>
+                            <li><a href="#">Шоколад</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Посылки</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!--MOBILE CATEGORYS-->
+</div>
+<div class="container bg-footer" id='footer'>
+        <div class="row">
+
+        </div>
+    </div>
+</body>
+</html>     

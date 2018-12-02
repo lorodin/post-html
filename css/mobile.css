@@ -2,6 +2,12 @@
     min-height: 50px;
 }
 @media(max-width: 800px){
+    .hidden-sm {
+        display: none;
+    }
+    .show-sm {
+        display: block;
+    }
     .row {
         float: left;
         width: 100%;
@@ -58,14 +64,22 @@
 }
 
 @media(min-width: 800px){
+    .hidden-lg {
+        display: none;
+    }
+    .show-lg {
+        display: block;
+    }
     .container {
         min-width: 100%;
-        margin: 0px auto;
+        float: left;
     }
 
     .container .row{
-        width: 1024px;
+        min-width: 1024px;
         margin: 0 auto;
+        max-width: 1024px;
+        min-height: 30px;
     }
 
     .col-lg-1 {

@@ -1,21 +1,32 @@
 var InitUIEvents = () => {
     let _this = this;
-    let $top_menu = $('.top-menu').first();
-    
-    _this.startYMenu = getPositionY(document.getElementsByClassName('top-menu')[0]);
+    let $static_menu = $('#top-static-menu');
+    _this.startYMenu = getPositionY(document.getElementById('top-menu'));
 
     $(window).scroll(()=>{
-        let scrollY = window.scrollY;
-        if(scrollY >= _this.startYMenu){
-            $top_menu.css('position', 'fixed');
-            $top_menu.css('top', '0px');
-            $top_menu.css('width', '100%');
-            $top_menu.css('z-index', '1000');
-        }else{
-            $top_menu.css('position', 'static');
-            $top_menu.css('z-index', '1');
-        }
+        let show = $static_menu.data('show');
+        if(!show) show = '0';
+        showOrHideStaticMenu(show);
     });
+
+    let showOrHideStaticMenu = (show) => {
+        let scrollY = window.scrollY;
+        if(scrollY > _this.startYMenu){
+            if(show === '0'){
+                $static_menu.data('show', '1');
+                $static_menu.slideDown(200);
+            }
+        }else{
+            if(show === '1'){
+                $static_menu.data('show', '0');
+                $static_menu.slideUp(200);
+            }
+        }
+    }
+
+    let show = $static_menu.data('show');
+    if(!show) show = '0';
+    showOrHideStaticMenu(show);
 }
 
 function getPositionY(element) {
